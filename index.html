@@ -1,150 +1,107 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <meta charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>codeE</title>
-<link rel=stylesheet href="style.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <title>codeE | Modern Web Design</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<div class="loader_bg">
-    <div class="loader"></div>
-</div> 
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">code<span>E</span></a>
+            <button class="hamburger">☰</button>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="article.html">Article</a>
+                <a href="works.html">Works</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<div class="bg">
-<img src="resource/Untitled282_20210606114847.jpeg">
-<img src="resource/advertisment/maintain.jpg">
-<img src="resource/main.jpg">
-<img src="resource/codeE3.png">
-</div>
-<nav>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content fade-up">
+            <h1 class="hero-title">Code your Dream Website</h1>
+            <p class="hero-subtitle">We design and build modern, high-performance static websites at affordable prices. Let's turn your vision into reality.</p>
+            <a href="works.html" class="btn-primary">View Our Work</a>
+        </div>
+    </header>
 
-<div class=header>
-<a href="index.html"><h1><font color=#39dc00>code</font>E</h1></a>
-<div class=menu>
-<a id=nl href=index.html>home</a>
-<a class=nl href=about.html>about</a>
-<a class=nl href=article.html>article</a>
-<a class=nl href=works.html>works</a>
-<a class=nl href=share.html>Lets Talk</a>
-<a class=nl href=contact.html>contact</a>
-</div>
-</nav>
-<div class=foggy>
-<center>
-<h2>Code your<br> Dream website</h2>
-</center>
-</div>
-<div style="padding:30;">
-<div class=h1>
-<h3>updates</h3>
-<marquee direction=up scrollamount=3 height=75%>
-<li>Our new website has launched today.</li>
-<li>Our aim is to build attractive websites in low cost</li><br>
-<li>Our new website has launched today.</li>
-<li>Our aim is to build attractive websites in low cost</li><br>
-<li>Our new website has launched today.</li>
-<li>Our aim is to build attractive websites in low cost</li><br>
-<li>Our new wesite has launched today.</li>
-<li>Our aim is to build attractive websites in low cost</li><br>
-<li>Our new website has launched today.</li>
-<li>Our aim is to build attractive websites in low cost</li><br>
-<li>Our new website has launched today.</li>
-<li>Our aim is to build attractive websites in low cost</li><br>
-<li>Our new website has launched today.</li>
-<li>Our aim is to build attractive websites in low cost</li><br>
-</marquee>
-</div>
-<div class=h2>
-<h3>an overview</h3>
-<p>A website is a page with a lot of interesting stuffs. The website is for purposes, such as interacting with social ,giving them more information about a specific thing, etc.</p>
-</div>
-<div class=h3>
-<h3>designed&nbsp;websites</h3>
-<marquee direction=up scrollamount=3 height=75%>
-<li>Thankus World</li>
-<li>Jose Thomas</li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
-</marquee>
-</div>
-</div> 
+    <!-- Updates Ticker -->
+    <div class="ticker-section">
+        <div class="ticker-content">
+            <div class="ticker-item">Our new website has launched today</div>
+            <div class="ticker-item">Building attractive websites in low cost</div>
+            <div class="ticker-item">Modern Glassmorphism aesthetics</div>
+            <div class="ticker-item">High performance and SEO optimized</div>
+            <!-- Duplicate for infinite scroll -->
+            <div class="ticker-item">Our new website has launched today</div>
+            <div class="ticker-item">Building attractive websites in low cost</div>
+            <div class="ticker-item">Modern Glassmorphism aesthetics</div>
+            <div class="ticker-item">High performance and SEO optimized</div>
+        </div>
+    </div>
 
-<div style="height:525;padding:50;">
-<div class=box style="margin:25 0 0 0;">
-<div class=zoom>
-<img src="resource/about.png">
+    <!-- Overview Section -->
+    <section class="section container">
+        <h2 class="section-title text-center fade-up">What We Do</h2>
+        <div class="grid">
+            
+            <div class="glass-card fade-up delay-100">
+                <div class="card-icon">⚡</div>
+                <h3 class="card-title">Static Websites</h3>
+                <p class="card-text">A website is your digital storefront. We build lightning-fast static sites that provide all the information your prospects need without the bloat.</p>
+                <a href="article.html" class="text-primary" style="display:inline-block; margin-top:1rem; font-weight:600;">Learn More →</a>
+            </div>
+            
+            <div class="glass-card fade-up delay-200">
+                <div class="card-icon">🎨</div>
+                <h3 class="card-title">Modern Design</h3>
+                <p class="card-text">We utilize the latest design trends including dark mode, glassmorphism, and smooth animations to wow your visitors.</p>
+                <a href="about.html" class="text-primary" style="display:inline-block; margin-top:1rem; font-weight:600;">Read About Us →</a>
+            </div>
+            
+            <div class="glass-card fade-up delay-300">
+                <div class="card-icon">🚀</div>
+                <h3 class="card-title">Portfolio Showcase</h3>
+                <p class="card-text">Check out our previous works including Thankus World, Jose Thomas, and Robotics Lim to see our quality first hand.</p>
+                <a href="works.html" class="text-primary" style="display:inline-block; margin-top:1rem; font-weight:600;">See Projects →</a>
+            </div>
 
-<center>
-<h4>about</h4>
-</center>
-</div>
-<p>codeE is a website developing company for common people. We designs and host at a cheap rate. We designs not only a website but also the dreams of common people.We only deals with static websites.</p>
-<center>
-<a href=about.html><button>read more</button></a>
-</div>
+        </div>
+    </section>
 
-<div class=box>
-<div class=zoom>
-<img src="resource/purpose.jpg">
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">code<span class="text-primary">E</span></div>
+            <p style="color: var(--color-text-muted);">Powered by codeE Designers</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/profile.php?id=100068714392688" target="_blank">
+                    <img src="resource/facebook.png" alt="Facebook" style="width: 24px; height: 24px; filter: invert(1);">
+                </a>
+                <a href="https://www.instagram.com/codeedesigners/" target="_blank">
+                    <img src="resource/instagram.png" alt="Instagram" style="width: 24px; height: 24px; filter: invert(1);">
+                </a>
+            </div>
+            <p style="font-size: 0.8rem; color: #666;">© 2026 codeE. All rights reserved.</p>
+        </div>
+    </footer>
 
-<center>
-<h4>Article</h4>
-</center>
-</div>
-<p>The purpose of a website is to turn visitors into prospects.
-And the way to do this is to identify the major user types visiting your site, speak to their needs and give them a clear action step to take next.</p>
-<center>
-<a href=article.html><button>read more</button></a>
-</div>
-
-<div class=box style="margin:25 0 0 0;">
-<div class=zoom>
-<img src="resource/WORKS-og.png">
-
-<center>
-<h4>Work</h4>
-</center>
-</div>
-<p>Here is my some of the works. You can just see the work and contact me for your dream website.
-I think you will like my stuffs. If you like the works please support as.</p>
-<center>
-<a href="works.html"><button>read more</button></a>
-</div>
-
-</div>
-</div>
-<br><br><br><br><br><br><br>
-<center><h3>offical logo </h3></center><center><image src="resource/Untitled282_20210606114847.jpeg"></center>
-<div style="padding:50;">
-<h3>our programmes<hr></h3>
-<p>Our main aim is to develop Website. We designs your dream websites. We will develop websites in low cost for common people. After the development of the site we will provide free maintenance. </p>
-</div>
-
-<div class=footer>
-<center>
-Powered by codeE<br>
-<a href=""><img src="resource/white_facebook-removebg-preview.png" style="width:50px;height:50px;"></a>
-<a href="https://www.instagram.com/codeedesigners/"><img src="resource/white_insta-removebg-preview.png" style="width:63px;height:50px;"></a>
-</div>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script>
-        setTimeout(function(){
-            $('.loader_bg').fadeToggle();
-        }, 1500);
-    </script>
-
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
 </body>
 </html>

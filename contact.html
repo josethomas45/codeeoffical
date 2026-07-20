@@ -1,59 +1,106 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>codeE</title>
-<link rel=stylesheet href="style.css"></link>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeE | Contact Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<nav>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">code<span>E</span></a>
+            <button class="hamburger">☰</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="article.html">Article</a>
+                <a href="works.html">Works</a>
+                <a href="contact.html" class="active">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<div class=carrier>
-<a href="index.html"><h1><font color=#39dc00>code</font>E</h1></a>
-<div class=menu>
-<a class=nl href=index.html>home</a>
-<a class=nl href=about.html>about</a>
-<a class=nl href=article.html>article</a>
-<a class=nl href=works.html>works</a>
-<a class=nl href=share.html>Lets Talk</a>
-<a id=nl href=contact.html>contact</a>
-</div></div>
-</nav>
-<div class=carrier style="margin:200 auto;height:300;">
-<div class=boxc><center>
-<h3>Book your website</h3><br>
-<form method="post" action="contact.php">
-<input placeholder="NAME" required>
-<input placeholder="EMAIL" required>
-<input placeholder="PHONE" required>
-<textarea rows=4 cols=18 placeholder="Your opion about you website" required></textarea>
-<button>Register</button>
-</form>
-</div>
+    <!-- Page Header -->
+    <header class="hero" style="min-height: 40vh; align-items: flex-end; padding-bottom: 3rem;">
+        <div class="hero-bg"></div>
+        <div class="container hero-content fade-up" style="text-align: left;">
+            <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 0.5rem;">Let's Talk</h1>
+            <p class="hero-subtitle" style="margin-bottom: 0;">Ready to start your digital journey? Get in touch.</p>
+        </div>
+    </header>
 
-<div class=boxc><center>
-<h3>contact us<hr></h3>
+    <!-- Contact Section -->
+    <section class="section container">
+        <div class="grid" style="grid-template-columns: 1fr 1fr;">
+            
+            <!-- Contact Form -->
+            <div class="glass-card fade-up delay-100">
+                <h3 class="card-title">Book Your Website</h3>
+                <p class="card-text" style="margin-bottom: 2rem;">Fill out the form below and we will get back to you as soon as possible.</p>
+                
+                <form method="post" action="contact.php">
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="YOUR NAME" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="YOUR EMAIL" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" class="form-control" name="phone" placeholder="YOUR PHONE" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" placeholder="Your opinion about your dream website" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary" style="width: 100%;">Register</button>
+                </form>
+            </div>
+            
+            <!-- Contact Info -->
+            <div class="fade-up delay-200" style="display: flex; flex-direction: column; justify-content: center; padding: 2rem;">
+                <h3 class="section-title" style="font-size: 2rem; margin-bottom: 1.5rem;">Contact Info</h3>
+                
+                <div style="margin-bottom: 2rem;">
+                    <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Email</h4>
+                    <a href="mailto:codee1045@gmail.com" style="font-size: 1.2rem;">codee1045@gmail.com</a>
+                </div>
+                
+                <div style="margin-bottom: 3rem;">
+                    <h4 style="color: var(--color-primary); margin-bottom: 1rem;">Follow Us</h4>
+                    <div style="display: flex; gap: 1rem;">
+                        <a href="https://www.instagram.com/codeedesigners/" target="_blank" style="display: inline-block; padding: 10px; background: var(--color-surface); border-radius: 8px; border: 1px solid var(--color-border);">
+                            <img src="resource/instagram.png" alt="Instagram" style="width: 30px; height: 30px; filter: invert(1);">
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100068714392688" target="_blank" style="display: inline-block; padding: 10px; background: var(--color-surface); border-radius: 8px; border: 1px solid var(--color-border);">
+                            <img src="resource/facebook.png" alt="Facebook" style="width: 30px; height: 30px; filter: invert(1);">
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- BMC Button -->
+                <div>
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="JoseThomas" data-color="#0f0f11" data-emoji="😇"  data-font="Inter" data-text="Buy our codes" data-outline-color="#39dc00" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
+                </div>
+            </div>
 
-<b>
-codeE
-<br><br>
+        </div>
+    </section>
 
-EMAIL:<a href=mailto:codee1045@gmail.com>codeE@gmail.com</a><br>
-<br><br>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">code<span class="text-primary">E</span></div>
+            <p style="color: var(--color-text-muted);">Powered by codeE Designers</p>
+            <p style="font-size: 0.8rem; color: #666; margin-top: 1rem;">© 2026 codeE. All rights reserved.</p>
+        </div>
+    </footer>
 
-
-<a href="https://www.instagram.com/codeedesigners/"><img src="resource/instagram.png" style="width:51px;height:51px;"></a>
-<a href="https://www.facebook.com/profile.php?id=100068714392688"><img src="resource/facebook.png" style="width:55px;height:55px;"></a><br>
-<a href="" style="width:50px;height:50px;"></a><br><br>
-<script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="JoseThomas" data-color="#0a0a0a" data-emoji="😇"  data-font="Cookie" data-text="Buy our codes" data-outline-color="#ffffff" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script><br>
-
-<br>
-</div>
-
-</div>
-<div class=footer>
-<center>
-Powered by codeE<br>
-<a href=""><img src="resource/white_facebook-removebg-preview.png" style="width:50px;height:50px;"></a>
-<a href="https://www.instagram.com/codeedesigners/"><img src="resource/white_insta-removebg-preview.png" style="width:63px;height:50px;"></a></div>
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
 </body>
 </html>

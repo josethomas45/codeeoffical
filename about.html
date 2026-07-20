@@ -1,37 +1,84 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>codeE</title>
-<link rel=stylesheet href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeE | About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav>
-<div class=header>
-<a href="index.html"><h1><font color=#39dc00>code</font>E</h1></a>
-<div class=menu>
-<a class=nl href=index.html>home</a>
-<a id=nl href=about.html>about</a>
-<a class=nl href=article.html>article</a>
-<a class=nl href=works.html>works</a>
-<a class=nl href=share.html>Lets Talk</a>
-<a class=nl href=contact.html>contact</a>
-</div>
-</nav>
-<div class=carrier style"margin:100 auto;">
-<br><br><br><br><br><br>
-<h3>about</h3>
-<p>codeE is a website developing company for common people. We designs and host at a cheap rate. We designs not only a website but also the dreams of common people.Like a personal assistance, through which we should be able to assist you for maintain your web, and in dirty or dangerous errors.We only deals with static websites.</p><br><br>
-<p><video src="resource/codeE advetisment.mp4" width=100% height=70% controls></video><i>Besides a website its your dream just build it in low cost. </i><br><br> 
-<h3>Some Facts:</h3>
-Website are also suitable for some procedurally-based vocations.All publicly accessible websites collectively constitute the World Wide Web. There are also private websites that can only be accessed on a private network, such as a company's internal website for its employees.
 
-Websites are typically dedicated to a particular topic or purpose, such as news, education, commerce, entertainment, or social networking. Hyperlinking between web pages guides the navigation of the site, which often starts with a home page. 
-</p><br><br>
-</div>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">code<span>E</span></a>
+            <button class="hamburger">☰</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html" class="active">About</a>
+                <a href="article.html">Article</a>
+                <a href="works.html">Works</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
 
-<div class=footer>
-<center>
-Powered by codeE<br>
-<a href=""><img src="resource/white_facebook-removebg-preview.png" style="width:50px;height:50px;"></a>
-<a href="https://www.instagram.com/codeedesigners/"><img src="resource/white_insta-removebg-preview.png" style="width:63px;height:50px;"></a></div>
+    <!-- Page Header -->
+    <header class="hero" style="min-height: 50vh;">
+        <div class="hero-bg"></div>
+        <div class="container hero-content fade-up">
+            <h1 class="hero-title" style="font-size: 3rem;">About CodeE</h1>
+            <p class="hero-subtitle">Designing not just websites, but the dreams of common people.</p>
+        </div>
+    </header>
+
+    <!-- About Content -->
+    <section class="section container">
+        <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center;">
+            <div class="fade-up delay-100">
+                <h2 class="section-title" style="margin-bottom: 1.5rem;">Who We Are</h2>
+                <p style="margin-bottom: 1rem; color: var(--color-text-muted);">
+                    <strong>codeE</strong> is a website developing company for common people. We design and host at a cheap rate. We deal exclusively with highly optimized static websites, ensuring maximum performance and minimum maintenance.
+                </p>
+                <p style="margin-bottom: 1.5rem; color: var(--color-text-muted);">
+                    Think of us like a personal assistant for your digital presence. We are here to assist you in maintaining your web space, keeping you clear of dirty or dangerous errors.
+                </p>
+                <div class="glass-card" style="padding: 1.5rem; display: inline-block;">
+                    <h4 style="color: var(--color-primary); margin-bottom: 0.5rem;">Fun Fact</h4>
+                    <p style="font-size: 0.9rem; color: var(--color-text-muted);">All publicly accessible websites collectively constitute the World Wide Web. Our mission is to make your piece of the web beautiful.</p>
+                </div>
+            </div>
+            
+            <div class="fade-up delay-200" style="border-radius: 16px; overflow: hidden; border: 1px solid var(--color-border); box-shadow: 0 10px 30px rgba(0,0,0,0.5);">
+                <video src="resource/codeE advetisment.mp4" width="100%" controls poster="resource/main.jpg" style="display: block;"></video>
+                <div style="padding: 1.5rem; background: var(--color-surface); backdrop-filter: blur(10px);">
+                    <p style="font-style: italic; color: var(--color-text-muted); text-align: center;">"Besides a website, it's your dream. Just build it in low cost."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">code<span class="text-primary">E</span></div>
+            <p style="color: var(--color-text-muted);">Powered by codeE Designers</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/profile.php?id=100068714392688" target="_blank">
+                    <img src="resource/facebook.png" alt="Facebook" style="width: 24px; height: 24px; filter: invert(1);">
+                </a>
+                <a href="https://www.instagram.com/codeedesigners/" target="_blank">
+                    <img src="resource/instagram.png" alt="Instagram" style="width: 24px; height: 24px; filter: invert(1);">
+                </a>
+            </div>
+            <p style="font-size: 0.8rem; color: #666;">© 2026 codeE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
 </body>
 </html>

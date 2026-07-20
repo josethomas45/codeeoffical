@@ -1,38 +1,78 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>codeE</title>
-<link rel=stylesheet href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>codeE | Share Your Ideas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<nav>
-<div class=header>
-<a href="index.html"><h1><font color=#39dc00>code</font>E</h1></a>
-<div class=menu>
-<a class=nl href=index.html>home</a>
-<a class=nl href=about.html>about</a>
-<a class=nl href=article.html>article</a>
-<a class=nl href=works.html>works</a>
-<a id=nl href=share.html>Lets Talk</a>
-<a class=nl href=contact.html>contact</a>
-</div>
-</nav>
-<center>
-<div class=carrier style="margin:200 auto;height:300;">
-<div class=boxc><center>
-<h3>Im always here for your ideas</h3><br>
-<form method="post" action="share.php">
-<input placeholder="NAME" required>
-<input placeholder="EMAIL" required>
-<textarea rows=4 cols=18 placeholder="YOUR VALUABLE IDEAS" required></textarea>
-<button>send</button>
-</form>
-</div>
-</div>
-</center>
-<div class=footer>
-<center>
-Powered by codeE<br>
-<a href=""><img src="resource/white_facebook-removebg-preview.png" style="width:50px;height:50px;"></a>
-<a href="https://www.instagram.com/codeedesigners/"><img src="resource/white_insta-removebg-preview.png" style="width:63px;height:50px;"></a></div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">code<span>E</span></a>
+            <button class="hamburger">☰</button>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="article.html">Article</a>
+                <a href="works.html">Works</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="hero" style="min-height: 40vh; align-items: flex-end; padding-bottom: 3rem;">
+        <div class="hero-bg"></div>
+        <div class="container hero-content fade-up" style="text-align: center;">
+            <h1 class="hero-title" style="font-size: 3rem; margin-bottom: 0.5rem;">I'm always here for your ideas</h1>
+            <p class="hero-subtitle" style="margin-bottom: 0;">Share your valuable ideas with us and we'll make them a reality.</p>
+        </div>
+    </header>
+
+    <!-- Share Section -->
+    <section class="section container" style="max-width: 600px; margin: 0 auto;">
+        
+        <div class="glass-card fade-up delay-100">
+            <form method="post" action="share.php">
+                <div class="form-group">
+                    <input type="text" class="form-control" name="name" placeholder="YOUR NAME" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="form-control" name="email" placeholder="YOUR EMAIL" required>
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" name="ideas" placeholder="YOUR VALUABLE IDEAS" required></textarea>
+                </div>
+                <button type="submit" class="btn-primary" style="width: 100%;">Send</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">code<span class="text-primary">E</span></div>
+            <p style="color: var(--color-text-muted);">Powered by codeE Designers</p>
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/profile.php?id=100068714392688" target="_blank">
+                    <img src="resource/facebook.png" alt="Facebook" style="width: 24px; height: 24px; filter: invert(1);">
+                </a>
+                <a href="https://www.instagram.com/codeedesigners/" target="_blank">
+                    <img src="resource/instagram.png" alt="Instagram" style="width: 24px; height: 24px; filter: invert(1);">
+                </a>
+            </div>
+            <p style="font-size: 0.8rem; color: #666;">© 2026 codeE. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
 </body>
 </html>
